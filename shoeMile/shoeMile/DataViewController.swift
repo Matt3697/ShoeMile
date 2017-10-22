@@ -9,11 +9,27 @@
 import UIKit
 
 class DataViewController: UIViewController {
-
-    //stepper label displays user input on stepper
-    @IBOutlet weak var stepperLabel: UILabel!
+    
+  
+    var newMiles = 0.0
+    var currentMiles = 0.0
+    var iter = 0.0
+    @IBOutlet weak var stepperLab: UILabel!
+    
     @IBAction func stepper(_ sender: UIStepper) {
-        stepperLabel.text = String(sender.value)
+        stepperLab.text = String(sender.value)
+        newMiles = sender.value
+    }
+    
+    
+    
+    @IBOutlet weak var currentMileLab: UILabel!
+    
+    @IBAction func submit(_ sender: Any) {
+        currentMiles += newMiles
+        currentMileLab.text = String(currentMiles)
+        newMiles = 0.0
+        
     }
     
     @IBOutlet weak var dataLabel: UILabel!
