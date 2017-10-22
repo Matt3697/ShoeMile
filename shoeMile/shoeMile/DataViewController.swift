@@ -10,6 +10,12 @@ import UIKit
 
 class DataViewController: UIViewController {
 
+    //stepper label displays user input on stepper
+    @IBOutlet weak var stepperLabel: UILabel!
+    @IBAction func stepper(_ sender: UIStepper) {
+        stepperLabel.text = String(sender.value)
+    }
+    
     @IBOutlet weak var dataLabel: UILabel!
     var dataObject: String = ""
 
