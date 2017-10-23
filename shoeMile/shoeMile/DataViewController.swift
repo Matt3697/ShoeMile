@@ -28,8 +28,7 @@ class DataViewController: UIViewController {
     @IBAction func submit(_ sender: Any) {
         currentMiles += newMiles
         currentMileLab.text = String(currentMiles)
-        newMiles = 0.0
-        
+        UserDefaults.standard.set(currentMiles, forKey: "miles")
     }
     
     @IBOutlet weak var dataLabel: UILabel!
@@ -51,6 +50,12 @@ class DataViewController: UIViewController {
         self.dataLabel!.text = dataObject
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        if let x = UserDefaults.standard.object(forKey: "miles") as? Double{
+            currentMiles = x
+            currentMileLab.text = String(x)
+        }
+    }
 
 }
 
