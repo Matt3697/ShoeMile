@@ -59,10 +59,10 @@
             </objects>
             <point key="canvasLocation" x="-101.59999999999999" y="-243.32833583208398"/>
         </scene>
-        <!--View Controller-->
+        <!--Log In View Controller-->
         <scene sceneID="KAI-wo-Rm1">
             <objects>
-                <viewController id="Qyl-l5-CQX" sceneMemberID="viewController">
+                <viewController id="Qyl-l5-CQX" customClass="logInViewController" customModule="shoeMile" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ChG-WS-8mk" customClass="logInController">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -102,20 +102,28 @@
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="submit:" destination="Qyl-l5-CQX" eventType="touchUpInside" id="KSJ-fl-O6l"/>
+                                    <segue destination="S4R-Ja-viH" kind="show" identifier="dataSegue" id="nUS-DJ-OvW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="OkF-0a-n8q"/>
                     </view>
+                    <connections>
+                        <outlet property="email" destination="GAB-Sd-sKT" id="RnX-2y-oIs"/>
+                        <outlet property="password" destination="W0n-eE-JFg" id="Wz7-0A-ngt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c7Q-53-Ahh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-108" y="468.21589205397305"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Account View Controller-->
         <scene sceneID="J0y-k5-G3E">
             <objects>
-                <viewController id="F2d-GT-QBJ" sceneMemberID="viewController">
+                <viewController id="F2d-GT-QBJ" customClass="createAccountViewController" customModule="shoeMile" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F4g-pG-DnJ" customClass="createAccountController">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
