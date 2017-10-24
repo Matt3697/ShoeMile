@@ -12,7 +12,17 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
 
     var pageViewController: UIPageViewController?
 
+    
+    
+    @IBAction func logIn(_ sender: Any) {
+        performSegue(withIdentifier: "logInSegue", sender: self)
+    }
+    
 
+    @IBAction func createAccount(_ sender: Any) {
+        performSegue(withIdentifier: "createAccountSegue", sender: self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
