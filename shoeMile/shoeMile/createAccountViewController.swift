@@ -33,20 +33,22 @@ class createAccountViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     @IBAction func submit(_ sender: Any) {
-        if(firstNameBox.text != ""){
+        if(firstNameBox.text != nil){
             UserDefaults.standard.set(firstNameBox.text, forKey: "firstName")
         }
-        if(lastNameBox.text != ""){
-            UserDefaults.standard.set(lastNameBox.text, forKey: "lastName")
+        if(lastNameBox.text != nil){
+            if(UserDefaults.standard.bool(forKey: "email") == true){
+                print("User with that email already exists.")
+            }
+            else{
+                UserDefaults.standard.set(lastNameBox.text, forKey: "lastName")
+            }
         }
-        if(emailBox.text != ""){
+        if(emailBox.text != nil){
             UserDefaults.standard.set(emailBox.text, forKey: "email")
         }
-        if(passwordBox.text != "" && passwordBox.text == passRepeatBox.text){
+        if(passwordBox.text != nil && passwordBox.text == passRepeatBox.text){
             UserDefaults.standard.set(passwordBox.text, forKey: "password")
-        }
-        else{
-            
         }
         dismiss(animated: true, completion: nil)
     }
