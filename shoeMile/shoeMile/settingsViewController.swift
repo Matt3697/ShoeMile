@@ -11,10 +11,14 @@ import UIKit
 class settingsViewController: UIViewController {
     
     
-    @IBAction func setGoalMiles(_ sender: Double) {
-            goalMiles = sender
-    }
     
+    @IBOutlet weak var goalMilesLab: UITextField!
+    
+    @IBAction func saveChanges(_ sender: Any) {
+        if(goalMilesLab.text != nil){
+            goalMiles = goalMiles.binade
+        }
+    }
     
     @IBAction func exit(_ sender: Any) {
         dismiss(animated: true, completion: nil)

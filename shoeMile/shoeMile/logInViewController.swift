@@ -16,6 +16,9 @@ class logInViewController: UIViewController {
     var actEmail = UserDefaults.standard.object(forKey: "email") as? String
     var actPass = UserDefaults.standard.object(forKey: "password") as? String
     
+    @IBAction func exit(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
     @IBAction func submit(_ sender: Any) {
         let entEmail = email.text
         let entPass = password.text
@@ -29,12 +32,13 @@ class logInViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.hideKeyboardWhenTappedAround()
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+   
 }
