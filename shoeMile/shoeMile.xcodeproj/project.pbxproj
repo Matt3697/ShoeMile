@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F20719F61FA0EF7E00C09D4A /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20719F51FA0EF7E00C09D4A /* settingsViewController.swift */; };
 		F2523EFB1F9C36C2001290EF /* running-512.png in Resources */ = {isa = PBXBuildFile; fileRef = F2523EFA1F9C36C2001290EF /* running-512.png */; };
 		F2C289841F8C6C4C001525F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C289831F8C6C4C001525F9 /* AppDelegate.swift */; };
 		F2C289881F8C6C4C001525F9 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C289871F8C6C4C001525F9 /* DataViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F20719F51FA0EF7E00C09D4A /* settingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
 		F2523EFA1F9C36C2001290EF /* running-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "running-512.png"; path = "../../running-512.png"; sourceTree = "<group>"; };
 		F2C289801F8C6C4C001525F9 /* shoeMile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shoeMile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C289831F8C6C4C001525F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				F2C289871F8C6C4C001525F9 /* DataViewController.swift */,
 				F2C289891F8C6C4C001525F9 /* ModelController.swift */,
 				F2C2898B1F8C6C4C001525F9 /* Main.storyboard */,
+				F20719F51FA0EF7E00C09D4A /* settingsViewController.swift */,
 				F2CBE6EE1F9FA2F500A89D25 /* createAccountViewController.swift */,
 				F2CBE6EC1F9FA2C400A89D25 /* logInViewController.swift */,
 				F2523EFA1F9C36C2001290EF /* running-512.png */,
@@ -281,6 +284,7 @@
 				F2CBE6F31F9FEB7200A89D25 /* ViewControllerOne.swift in Sources */,
 				F2C289841F8C6C4C001525F9 /* AppDelegate.swift in Sources */,
 				F2CBE6ED1F9FA2C400A89D25 /* logInViewController.swift in Sources */,
+				F20719F61FA0EF7E00C09D4A /* settingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
