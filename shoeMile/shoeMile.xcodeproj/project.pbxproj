@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F2523EFB1F9C36C2001290EF /* running-512.png in Resources */ = {isa = PBXBuildFile; fileRef = F2523EFA1F9C36C2001290EF /* running-512.png */; };
 		F2C289841F8C6C4C001525F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C289831F8C6C4C001525F9 /* AppDelegate.swift */; };
-		F2C289861F8C6C4C001525F9 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C289851F8C6C4C001525F9 /* RootViewController.swift */; };
 		F2C289881F8C6C4C001525F9 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C289871F8C6C4C001525F9 /* DataViewController.swift */; };
 		F2C2898A1F8C6C4C001525F9 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C289891F8C6C4C001525F9 /* ModelController.swift */; };
 		F2C2898D1F8C6C4C001525F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C2898B1F8C6C4C001525F9 /* Main.storyboard */; };
@@ -19,6 +18,7 @@
 		F2C289A81F8C6C4D001525F9 /* shoeMileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C289A71F8C6C4D001525F9 /* shoeMileUITests.swift */; };
 		F2CBE6ED1F9FA2C400A89D25 /* logInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CBE6EC1F9FA2C400A89D25 /* logInViewController.swift */; };
 		F2CBE6EF1F9FA2F500A89D25 /* createAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CBE6EE1F9FA2F500A89D25 /* createAccountViewController.swift */; };
+		F2CBE6F31F9FEB7200A89D25 /* ViewControllerOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CBE6F21F9FEB7200A89D25 /* ViewControllerOne.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,6 @@
 		F2523EFA1F9C36C2001290EF /* running-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "running-512.png"; path = "../../running-512.png"; sourceTree = "<group>"; };
 		F2C289801F8C6C4C001525F9 /* shoeMile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shoeMile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C289831F8C6C4C001525F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F2C289851F8C6C4C001525F9 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		F2C289871F8C6C4C001525F9 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		F2C289891F8C6C4C001525F9 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		F2C2898C1F8C6C4C001525F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,6 +56,7 @@
 		F2C289A91F8C6C4D001525F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2CBE6EC1F9FA2C400A89D25 /* logInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logInViewController.swift; sourceTree = "<group>"; };
 		F2CBE6EE1F9FA2F500A89D25 /* createAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createAccountViewController.swift; sourceTree = "<group>"; };
+		F2CBE6F21F9FEB7200A89D25 /* ViewControllerOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewControllerOne.swift; path = shoeMile/ViewControllerOne.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +87,7 @@
 		F2C289771F8C6C4C001525F9 = {
 			isa = PBXGroup;
 			children = (
+				F2CBE6F21F9FEB7200A89D25 /* ViewControllerOne.swift */,
 				F2C289821F8C6C4C001525F9 /* shoeMile */,
 				F2C2899B1F8C6C4C001525F9 /* shoeMileTests */,
 				F2C289A61F8C6C4D001525F9 /* shoeMileUITests */,
@@ -108,7 +109,6 @@
 			isa = PBXGroup;
 			children = (
 				F2C289831F8C6C4C001525F9 /* AppDelegate.swift */,
-				F2C289851F8C6C4C001525F9 /* RootViewController.swift */,
 				F2C289871F8C6C4C001525F9 /* DataViewController.swift */,
 				F2C289891F8C6C4C001525F9 /* ModelController.swift */,
 				F2C2898B1F8C6C4C001525F9 /* Main.storyboard */,
@@ -276,9 +276,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2CBE6EF1F9FA2F500A89D25 /* createAccountViewController.swift in Sources */,
-				F2C289861F8C6C4C001525F9 /* RootViewController.swift in Sources */,
 				F2C2898A1F8C6C4C001525F9 /* ModelController.swift in Sources */,
 				F2C289881F8C6C4C001525F9 /* DataViewController.swift in Sources */,
+				F2CBE6F31F9FEB7200A89D25 /* ViewControllerOne.swift in Sources */,
 				F2C289841F8C6C4C001525F9 /* AppDelegate.swift in Sources */,
 				F2CBE6ED1F9FA2C400A89D25 /* logInViewController.swift in Sources */,
 			);
@@ -447,10 +447,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = F8AEHTTTDP;
 				INFOPLIST_FILE = shoeMile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = main.shoeMile;
+				PRODUCT_BUNDLE_IDENTIFIER = main.shoeMiles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -462,10 +462,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = F8AEHTTTDP;
 				INFOPLIST_FILE = shoeMile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = main.shoeMile;
+				PRODUCT_BUNDLE_IDENTIFIER = main.shoeMiles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

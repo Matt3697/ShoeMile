@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class createAccountViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -21,7 +22,35 @@ class createAccountViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBOutlet weak var firstNameBox: UITextField!
+    @IBOutlet weak var lastNameBox: UITextField!
+    @IBOutlet weak var emailBox: UITextField!
+    @IBOutlet weak var passwordBox: UITextField!
+    @IBOutlet weak var passRepeatBox: UITextField!
+    
+    
+    @IBAction func closeWindow(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    @IBAction func submit(_ sender: Any) {
+        if(firstNameBox.text != ""){
+            UserDefaults.standard.set(firstNameBox.text, forKey: "firstName")
+        }
+        if(lastNameBox.text != ""){
+            UserDefaults.standard.set(lastNameBox.text, forKey: "lastName")
+        }
+        if(emailBox.text != ""){
+            UserDefaults.standard.set(emailBox.text, forKey: "email")
+        }
+        if(passwordBox.text != "" && passwordBox.text == passRepeatBox.text){
+            UserDefaults.standard.set(passwordBox.text, forKey: "password")
+        }
+        else{
+            
+        }
+        dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

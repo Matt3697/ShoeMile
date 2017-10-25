@@ -12,13 +12,20 @@ class logInViewController: UIViewController {
 
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var email: UITextField!
-    
-    
-    
-    
+   
+    var actEmail = UserDefaults.standard.object(forKey: "email") as? String
+    var actPass = UserDefaults.standard.object(forKey: "password") as? String
     
     @IBAction func submit(_ sender: Any) {
-        performSegue(withIdentifier: "dataSegue", sender: self)
+        let entEmail = email.text
+        let entPass = password.text
+        if((entEmail == actEmail) && (entPass == actPass)){
+            performSegue(withIdentifier: "dataSegue", sender: self)
+        }
+        else{
+            print("The Email or Password Entered is Incorrect")
+            dismiss(animated: false, completion: nil)
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,20 +37,4 @@ class logInViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    override func viewDidAppear(_ animated: Bool) {
-        var usrEmail = email.text
-        var usrPass = password.text
-        
-    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
