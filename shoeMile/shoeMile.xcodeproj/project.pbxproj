@@ -17,7 +17,6 @@
 		F2C289921F8C6C4C001525F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C289901F8C6C4C001525F9 /* LaunchScreen.storyboard */; };
 		F2C2899D1F8C6C4C001525F9 /* shoeMileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C2899C1F8C6C4C001525F9 /* shoeMileTests.swift */; };
 		F2C289A81F8C6C4D001525F9 /* shoeMileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C289A71F8C6C4D001525F9 /* shoeMileUITests.swift */; };
-		F2CBE6ED1F9FA2C400A89D25 /* logInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CBE6EC1F9FA2C400A89D25 /* logInViewController.swift */; };
 		F2CBE6EF1F9FA2F500A89D25 /* createAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CBE6EE1F9FA2F500A89D25 /* createAccountViewController.swift */; };
 		F2CBE6F31F9FEB7200A89D25 /* ViewControllerOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CBE6F21F9FEB7200A89D25 /* ViewControllerOne.swift */; };
 /* End PBXBuildFile section */
@@ -56,7 +55,6 @@
 		F2C289A31F8C6C4D001525F9 /* shoeMileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shoeMileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C289A71F8C6C4D001525F9 /* shoeMileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shoeMileUITests.swift; sourceTree = "<group>"; };
 		F2C289A91F8C6C4D001525F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F2CBE6EC1F9FA2C400A89D25 /* logInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logInViewController.swift; sourceTree = "<group>"; };
 		F2CBE6EE1F9FA2F500A89D25 /* createAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createAccountViewController.swift; sourceTree = "<group>"; };
 		F2CBE6F21F9FEB7200A89D25 /* ViewControllerOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewControllerOne.swift; path = shoeMile/ViewControllerOne.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,7 +114,6 @@
 				F2C2898B1F8C6C4C001525F9 /* Main.storyboard */,
 				F20719F51FA0EF7E00C09D4A /* settingsViewController.swift */,
 				F2CBE6EE1F9FA2F500A89D25 /* createAccountViewController.swift */,
-				F2CBE6EC1F9FA2C400A89D25 /* logInViewController.swift */,
 				F2523EFA1F9C36C2001290EF /* running-512.png */,
 				F2C2898E1F8C6C4C001525F9 /* Assets.xcassets */,
 				F2C289901F8C6C4C001525F9 /* LaunchScreen.storyboard */,
@@ -283,7 +280,6 @@
 				F2C289881F8C6C4C001525F9 /* DataViewController.swift in Sources */,
 				F2CBE6F31F9FEB7200A89D25 /* ViewControllerOne.swift in Sources */,
 				F2C289841F8C6C4C001525F9 /* AppDelegate.swift in Sources */,
-				F2CBE6ED1F9FA2C400A89D25 /* logInViewController.swift in Sources */,
 				F20719F61FA0EF7E00C09D4A /* settingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

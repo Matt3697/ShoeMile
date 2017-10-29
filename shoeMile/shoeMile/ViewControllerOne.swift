@@ -10,25 +10,31 @@ import UIKit
 
 class ViewControllerOne: UIViewController {
 
-    @IBAction func login(_ sender: Any) {
-        performSegue(withIdentifier: "logInSegue", sender: self)
-    }
     
-    @IBAction func createAccount(_ sender: Any) {
-        
-    }
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
+    override func viewDidAppear(_ animated: Bool) {
+        if(UserDefaults.standard.object(forKey: "email") != nil){
+            activityIndicator.stopAnimating()
+            performSegue(withIdentifier: "trackerSegue", sender: self)
+        }
+        else{
+            performSegue(withIdentifier: "createAccountSegue", sender: self)
+        }
+    }
 }
+
+
+
+
 extension UIViewController {
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
