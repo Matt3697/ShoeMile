@@ -306,7 +306,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="F8V-2V-qk6" kind="presentation" identifier="settingsSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="usn-zR-FRg"/>
+                                            <segue destination="F8V-2V-qk6" kind="show" identifier="settingsSegue" id="usn-zR-FRg"/>
                                         </connections>
                                     </button>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LLb-6m-jsF">
@@ -372,7 +372,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set Goal Miles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dV-tH-aDG">
-                                <rect key="frame" x="97" y="64" width="181" height="21"/>
+                                <rect key="frame" x="97" y="64" width="181" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="181" id="agv-eV-xhM"/>
                                 </constraints>
@@ -391,11 +391,12 @@
                                     <action selector="exit:" destination="F8V-2V-qk6" eventType="touchUpInside" id="Juh-4w-NkN"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.0" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zf2-nv-GzT">
-                                <rect key="frame" x="97" y="115" width="181" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.0" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zf2-nv-GzT">
+                                <rect key="frame" x="97" y="114" width="181" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" smartDashesType="no"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYa-cG-crY">
                                 <rect key="frame" x="97" y="699" width="181" height="30"/>
@@ -404,14 +405,14 @@
                                 <state key="normal" title="Save Changes">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="saveChanges:" destination="F8V-2V-qk6" eventType="touchUpInside" id="yvq-Va-8Fy"/>
-                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5x-RK-pz6">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5x-RK-pz6">
                                 <rect key="frame" x="118" y="571" width="138" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4gJ-nF-1zE"/>
+                                    <constraint firstAttribute="width" constant="138" id="9hr-QV-Fco"/>
+                                </constraints>
                                 <state key="normal" title="Save Changes">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -419,17 +420,31 @@
                                     <action selector="save:" destination="F8V-2V-qk6" eventType="touchUpInside" id="He7-kZ-dh7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uuL-xw-pIY">
+                                <rect key="frame" x="120" y="212" width="135" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="Ed3-vH-LqA"/>
+                                    <constraint firstAttribute="height" constant="30" id="x5b-2a-diz"/>
+                                </constraints>
+                                <state key="normal" title="Reset Current Miles"/>
+                                <connections>
+                                    <action selector="resetCurrentMiles:" destination="F8V-2V-qk6" eventType="touchUpInside" id="pkI-JG-lx6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.9474796660958904" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="zf2-nv-GzT" firstAttribute="top" secondItem="5dV-tH-aDG" secondAttribute="bottom" constant="30" id="2ng-SS-jys"/>
+                            <constraint firstItem="Sl0-rK-dnp" firstAttribute="trailing" secondItem="B5x-RK-pz6" secondAttribute="trailing" constant="119" id="4eP-Me-VZ2"/>
                             <constraint firstItem="Sl0-rK-dnp" firstAttribute="trailing" secondItem="5dV-tH-aDG" secondAttribute="trailing" constant="97" id="8DO-zy-ZF8"/>
+                            <constraint firstItem="uuL-xw-pIY" firstAttribute="leading" secondItem="Sl0-rK-dnp" secondAttribute="leading" constant="120" id="Gmk-3i-Qjb"/>
                             <constraint firstItem="c6a-NY-0lh" firstAttribute="top" secondItem="Sl0-rK-dnp" secondAttribute="top" constant="25" id="Kvs-aB-7yA"/>
-                            <constraint firstItem="zf2-nv-GzT" firstAttribute="leading" secondItem="Sl0-rK-dnp" secondAttribute="leading" constant="97" id="Qt1-Fs-xI8"/>
+                            <constraint firstItem="Sl0-rK-dnp" firstAttribute="bottom" secondItem="B5x-RK-pz6" secondAttribute="bottom" constant="66" id="Vdk-wO-B1Q"/>
                             <constraint firstItem="5dV-tH-aDG" firstAttribute="top" secondItem="Sl0-rK-dnp" secondAttribute="top" constant="44" id="XBT-gm-KVS"/>
                             <constraint firstItem="5dV-tH-aDG" firstAttribute="leading" secondItem="c6a-NY-0lh" secondAttribute="trailing" constant="47" id="axF-Ct-U3Z"/>
                             <constraint firstItem="c6a-NY-0lh" firstAttribute="leading" secondItem="Sl0-rK-dnp" secondAttribute="leading" constant="20" id="cRr-KW-fwV"/>
-                            <constraint firstItem="Sl0-rK-dnp" firstAttribute="trailing" secondItem="zf2-nv-GzT" secondAttribute="trailing" constant="97" id="v8c-12-x9l"/>
+                            <constraint firstItem="B5x-RK-pz6" firstAttribute="top" secondItem="uuL-xw-pIY" secondAttribute="bottom" constant="329" id="e6u-19-aGx"/>
+                            <constraint firstItem="B5x-RK-pz6" firstAttribute="leading" secondItem="Sl0-rK-dnp" secondAttribute="leading" constant="118" id="jvN-Pw-UHv"/>
+                            <constraint firstItem="Sl0-rK-dnp" firstAttribute="trailing" secondItem="uuL-xw-pIY" secondAttribute="trailing" constant="120" id="mhH-aw-Hkp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Sl0-rK-dnp"/>
                     </view>

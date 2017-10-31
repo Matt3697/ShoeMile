@@ -12,7 +12,7 @@ class DataViewController: UIViewController {
     
     var newMiles = 0.0
     var currentMiles = 0.0
-    var goalMiles = UserDefaults.standard.double(forKey: "maxMiles")
+    var goalMiles = 0.0
     
     @IBOutlet weak var stepperLab: UILabel!
     @IBAction func stepper(_ sender: UIStepper) {
@@ -51,23 +51,23 @@ class DataViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.dataLabel!.text = dataObject
     }
-
     override func viewDidAppear(_ animated: Bool) {
-        
         if let x = UserDefaults.standard.object(forKey: "miles") as? Double{
             currentMiles = x
             currentMileLab.text = String(x)
         }
+        if let y = UserDefaults.standard.object(forKey: "maxMiles") as? Double{
+            goalMiles = y
+        }
     }
+    
 
 }
 

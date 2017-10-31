@@ -18,11 +18,15 @@ class settingsViewController: UIViewController {
     @IBAction func exit(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-   
+    
+    @IBAction func resetCurrentMiles(_ sender: Any) {
+        let zero = 0.0
+        UserDefaults.standard.set(zero, forKey: "miles")
+    }
     @IBAction func save(_ sender: UIButton) {
         let goalMiles = Double(goalMilesLab.text!)
         goalMilesLab.text = String(describing: goalMiles)
-        UserDefaults.standard.set("goalMiles", forKey: "maxMiles")
+        UserDefaults.standard.set(goalMiles, forKey: "maxMiles")
         dismiss(animated: true, completion: nil)
     }
     override func viewDidLoad() {
