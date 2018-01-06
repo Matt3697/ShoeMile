@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F20719F61FA0EF7E00C09D4A /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20719F51FA0EF7E00C09D4A /* settingsViewController.swift */; };
-		F2523EFB1F9C36C2001290EF /* running-512.png in Resources */ = {isa = PBXBuildFile; fileRef = F2523EFA1F9C36C2001290EF /* running-512.png */; };
+		F2407F141FA8286400048200 /* running80x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2407F131FA8286400048200 /* running80x.png */; };
+		F2407F181FA8294800048200 /* running60x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2407F171FA8294800048200 /* running60x.png */; };
+		F2407F1C1FA82F7E00048200 /* running-512.png in Resources */ = {isa = PBXBuildFile; fileRef = F2407F1B1FA82F7E00048200 /* running-512.png */; };
 		F2C289841F8C6C4C001525F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C289831F8C6C4C001525F9 /* AppDelegate.swift */; };
 		F2C289881F8C6C4C001525F9 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C289871F8C6C4C001525F9 /* DataViewController.swift */; };
 		F2C2898A1F8C6C4C001525F9 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C289891F8C6C4C001525F9 /* ModelController.swift */; };
 		F2C2898D1F8C6C4C001525F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C2898B1F8C6C4C001525F9 /* Main.storyboard */; };
 		F2C2898F1F8C6C4C001525F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2C2898E1F8C6C4C001525F9 /* Assets.xcassets */; };
-		F2C289921F8C6C4C001525F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C289901F8C6C4C001525F9 /* LaunchScreen.storyboard */; };
 		F2C2899D1F8C6C4C001525F9 /* shoeMileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C2899C1F8C6C4C001525F9 /* shoeMileTests.swift */; };
 		F2C289A81F8C6C4D001525F9 /* shoeMileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C289A71F8C6C4D001525F9 /* shoeMileUITests.swift */; };
 		F2CBE6EF1F9FA2F500A89D25 /* createAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CBE6EE1F9FA2F500A89D25 /* createAccountViewController.swift */; };
@@ -40,14 +41,15 @@
 
 /* Begin PBXFileReference section */
 		F20719F51FA0EF7E00C09D4A /* settingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
-		F2523EFA1F9C36C2001290EF /* running-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "running-512.png"; path = "../../running-512.png"; sourceTree = "<group>"; };
+		F2407F131FA8286400048200 /* running80x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = running80x.png; sourceTree = "<group>"; };
+		F2407F171FA8294800048200 /* running60x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = running60x.png; sourceTree = "<group>"; };
+		F2407F1B1FA82F7E00048200 /* running-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "running-512.png"; sourceTree = "<group>"; };
 		F2C289801F8C6C4C001525F9 /* shoeMile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shoeMile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C289831F8C6C4C001525F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2C289871F8C6C4C001525F9 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		F2C289891F8C6C4C001525F9 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		F2C2898C1F8C6C4C001525F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2C2898E1F8C6C4C001525F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F2C289911F8C6C4C001525F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2C289931F8C6C4C001525F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2C289981F8C6C4C001525F9 /* shoeMileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shoeMileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C2899C1F8C6C4C001525F9 /* shoeMileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shoeMileTests.swift; sourceTree = "<group>"; };
@@ -56,7 +58,7 @@
 		F2C289A71F8C6C4D001525F9 /* shoeMileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shoeMileUITests.swift; sourceTree = "<group>"; };
 		F2C289A91F8C6C4D001525F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2CBE6EE1F9FA2F500A89D25 /* createAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createAccountViewController.swift; sourceTree = "<group>"; };
-		F2CBE6F21F9FEB7200A89D25 /* ViewControllerOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewControllerOne.swift; path = shoeMile/ViewControllerOne.swift; sourceTree = "<group>"; };
+		F2CBE6F21F9FEB7200A89D25 /* ViewControllerOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerOne.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +89,6 @@
 		F2C289771F8C6C4C001525F9 = {
 			isa = PBXGroup;
 			children = (
-				F2CBE6F21F9FEB7200A89D25 /* ViewControllerOne.swift */,
 				F2C289821F8C6C4C001525F9 /* shoeMile */,
 				F2C2899B1F8C6C4C001525F9 /* shoeMileTests */,
 				F2C289A61F8C6C4D001525F9 /* shoeMileUITests */,
@@ -109,14 +110,16 @@
 			isa = PBXGroup;
 			children = (
 				F2C289831F8C6C4C001525F9 /* AppDelegate.swift */,
+				F2CBE6F21F9FEB7200A89D25 /* ViewControllerOne.swift */,
 				F2C289871F8C6C4C001525F9 /* DataViewController.swift */,
 				F2C289891F8C6C4C001525F9 /* ModelController.swift */,
 				F2C2898B1F8C6C4C001525F9 /* Main.storyboard */,
 				F20719F51FA0EF7E00C09D4A /* settingsViewController.swift */,
 				F2CBE6EE1F9FA2F500A89D25 /* createAccountViewController.swift */,
-				F2523EFA1F9C36C2001290EF /* running-512.png */,
 				F2C2898E1F8C6C4C001525F9 /* Assets.xcassets */,
-				F2C289901F8C6C4C001525F9 /* LaunchScreen.storyboard */,
+				F2407F171FA8294800048200 /* running60x.png */,
+				F2407F1B1FA82F7E00048200 /* running-512.png */,
+				F2407F131FA8286400048200 /* running80x.png */,
 				F2C289931F8C6C4C001525F9 /* Info.plist */,
 			);
 			path = shoeMile;
@@ -247,9 +250,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2523EFB1F9C36C2001290EF /* running-512.png in Resources */,
-				F2C289921F8C6C4C001525F9 /* LaunchScreen.storyboard in Resources */,
+				F2407F181FA8294800048200 /* running60x.png in Resources */,
+				F2407F141FA8286400048200 /* running80x.png in Resources */,
 				F2C2898F1F8C6C4C001525F9 /* Assets.xcassets in Resources */,
+				F2407F1C1FA82F7E00048200 /* running-512.png in Resources */,
 				F2C2898D1F8C6C4C001525F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,14 +326,6 @@
 				F2C2898C1F8C6C4C001525F9 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F2C289901F8C6C4C001525F9 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F2C289911F8C6C4C001525F9 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
