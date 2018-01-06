@@ -44,6 +44,12 @@ class DataViewController: UIViewController {
             progressLab.text = String(progperc)
             progressView.progress = (progperc / 100)
         }
+        if(currentMiles == goalMiles){
+            //tell the user they have reached their goal.
+            let alertController = UIAlertController(title: "Good Work!", message: "You have reached your set goal.", preferredStyle: UIAlertControllerStyle.alert)
+            alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alertController, animated: true, completion: nil)
+        }
     }
     @IBOutlet weak var dataLabel: UILabel!
     var dataObject: String = ""
